@@ -13,7 +13,7 @@
 		8F640B32248B05CB00923151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F640B30248B05CB00923151 /* Main.storyboard */; };
 		8F640B34248B05CD00923151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F640B33248B05CD00923151 /* Assets.xcassets */; };
 		8F640B37248B05CD00923151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F640B35248B05CD00923151 /* LaunchScreen.storyboard */; };
-		8F640B42248B05CD00923151 /* FilmFestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F640B41248B05CD00923151 /* FilmFestTests.swift */; };
+		8F640B4D248B0BCE00923151 /* MovieStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F640B4C248B0BCE00923151 /* MovieStructTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		8F640B36248B05CD00923151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F640B38248B05CD00923151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F640B3D248B05CD00923151 /* FilmFestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F640B41248B05CD00923151 /* FilmFestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFestTests.swift; sourceTree = "<group>"; };
 		8F640B43248B05CD00923151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F640B4C248B0BCE00923151 /* MovieStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStructTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 		8F640B40248B05CD00923151 /* FilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F640B41248B05CD00923151 /* FilmFestTests.swift */,
 				8F640B43248B05CD00923151 /* Info.plist */,
+				8F640B4C248B0BCE00923151 /* MovieStructTest.swift */,
 			);
 			path = FilmFestTests;
 			sourceTree = "<group>";
@@ -152,6 +152,7 @@
 					};
 					8F640B3C248B05CD00923151 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 8F640B26248B05CB00923151;
 					};
 				};
@@ -210,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F640B42248B05CD00923151 /* FilmFestTests.swift in Sources */,
+				8F640B4D248B0BCE00923151 /* MovieStructTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +398,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FilmFestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -407,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FilmFestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFest.app/FilmFest";
@@ -418,6 +421,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FilmFestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
